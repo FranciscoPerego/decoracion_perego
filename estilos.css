@@ -1,0 +1,450 @@
+/*Reseteo de CSS*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    z-index: 100%;
+  }
+ 
+
+html /*Etiqueta raiz*/ {
+    font-size: 16px;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    
+}
+
+
+
+body {
+    background-color: gray;
+    line-height: 1.6;
+    height: 600px;
+}
+
+
+
+h1 {
+    color:black ;
+    background-color: black;
+    font-size: 3rem;
+}
+
+span {
+    color: pink;
+}
+
+p{
+    margin-bottom: 20px;
+    color: white;
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.linea {
+    border-top: 1px solid white;
+    background-color: currentColor ;
+    height: 2px;
+    padding: 0;
+    margin: 20px auto 0 auto;
+  }
+
+.footerInicio {
+    color: #ffc800;;
+    font-weight: bold;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+  }
+
+  .footerOtrasSecciones{
+    color: #ffc800;;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+  }
+
+
+
+.links {
+    color: lightblue; 
+    font-weight: bold;
+}
+
+.titulos1 {
+    color: pink;
+}
+
+.margenSuperior {
+    margin-top: 75px;
+}
+
+.margenSuperior2 {
+    margin-top: 40px;
+}
+
+
+table {
+    color: white;
+}
+
+nav {
+    float: left; 
+    
+  }
+  
+  nav ul {
+    list-style: none;
+    overflow: hidden; 
+  }
+  
+  nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  nav ul li a {
+    display: block; 
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li:hover {
+    background: pink;
+  }
+
+
+  .contenido {
+    padding-top: 80px;
+  }
+
+  .wrapper {
+    width: 80%;
+    margin: auto;
+    overflow:hidden;
+  }
+
+#categorias {
+    color: white;
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.normal {
+    font-style: normal;
+    font-weight: normal;
+}
+
+.cursiva {
+    font-style: italic;
+}
+
+.textoGrande {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.aLaDerecha {
+    text-align: right;
+}
+
+.subrayado {
+    text-decoration: underline;
+    color:pink;
+}
+
+.letrasBlancas
+{
+    color: white;
+    font-weight: bold;
+}
+
+.margenTexto{
+   margin-left: 30px;
+}
+
+.margenImagen{
+    margin-left: 25px;
+}
+
+.margenCarrito{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.margenIndex1 {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.margenIndex2 {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.bordes {
+    border: double 10px #e3f2fd;
+}
+
+.inlineCarrito{
+    display: inline;
+    margin-left: 5px;
+}
+
+.inlineBlock{
+    display: inline-block;
+}
+
+.margenCategorias {
+    margin-top: 70px;
+}
+
+
+/*Fondos*/
+
+.imagenes {
+    width: 360px;
+    height: 390px;
+    object-fit: cover;
+}
+
+.fondoImagen {
+    background-image: url(https://thumbs.dreamstime.com/b/pared-abstracta-negra-textura-oscura-del-cemento-como-fondo-92152003.jpg);
+
+}
+
+.fondoImagen2 {
+    background-image: url(https://image.freepik.com/foto-gratis/textura-marmol-negro-natural-papel-tapiz-azulejos-piel_24076-470.jpg);
+}
+
+
+/*FlexBox*/
+.padreFlex{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Estilos de GRIDS*/
+
+.gridCatalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+    list-style: none;
+    margin: 1em auto;
+    padding: 0;
+    max-width: 780px;
+    margin-top: 35px
+}
+.gridCatalogo li {
+    border: 2px solid pink;
+}
+.gridCatalogo li.landscape {
+    grid-column-end: span 2;
+}
+.gridCatalogo li img {
+   display: block;
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+}
+
+
+.gridIndex {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+    list-style: none;
+    margin: 1em auto;
+    padding: 0;
+    max-width: 780px;
+    margin-top: 35px;
+
+}
+.gridIndex li {
+    border: 10px double lightblue;
+}
+.gridIndex li.landscape {
+    grid-column-end: span 2;
+}
+.gridIndex li img {
+   display: block;
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+}
+
+/*MEDIA QUERIES*/
+/*SMARTPHONE PANTALLA CHICA*/
+@media (max-width: 320px) {
+    p {
+        color: white;
+    }
+
+    .footerInicio {
+        color: yellow;
+        font-weight: bold;
+        position: static;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+      }
+    
+      .footerOtrasSecciones{
+        color: yellow;
+        font-weight: bold;
+        position: absolute;
+        margin-top: 10px;
+        width: 100%;
+        height: 40px;
+      }
+    
+}
+/*SMARTPHONE*/
+@media (max-width: 576px) {
+    p {
+        color: white;
+    }
+
+    .footerInicio {
+        color: yellow;
+        font-weight: bold;
+        position: static;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+      }
+    
+      .footerOtrasSecciones{
+        color: yellow;
+        font-weight: bold;
+        position: absolute;
+        margin-top: 10px;
+        width: 100%;
+        height: 40px;
+      }
+    
+}
+    /*TABLET*/
+    @media (min-width: 577px) and (max-width: 768px) {
+        span {
+            color: #e3f2fd;
+        }
+         
+          .footerInicio {
+            color: pink;
+            font-weight: bold;
+            position: static;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+          }
+        
+          .footerOtrasSecciones{
+            color: pink;
+            font-weight: bold;
+            position: absolute;
+            margin-top: 10px;
+            width: 100%;
+            height: 40px;
+          }
+        
+
+    }
+
+
+/*GRADIENTES*/
+
+.grad {
+    background-image: linear-gradient(to bottom left,pink,white,#e3f2fd,black);
+}
+
+
+/*TRANSFORMACIONES*/
+.lugar {
+    transform: translate(200px,1px);
+}
+
+ .claseDiv {
+     width: 100px;
+     height: 100px;
+     background-color: greenyellow;
+     margin-left: 100px;
+ }
+
+ .escalar {
+     transform: scale(1,1);
+ }
+
+ .sesgar {
+     transform: skew(20deg,10deg);
+ }
+
+ .transic {
+     height: 100px;
+     transition: height 3s;
+ }
+
+ .transic:hover {
+     height: 200px;
+
+ }
+
+
+ /*ANIMACIONES*/
+.animacion {
+    animation-name: efecto;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+
+
+
+
+ /*LINEA DE TIEMPOS*/
+ @keyframes efecto {
+     0% /*INICIO*/{
+
+     }
+     
+     50% /*MEDIO*/{
+         border-radius: 50%;
+
+    }
+
+
+     100%  /*FINAL*/{
+         transform: translateX(900px);
+         background-color: pink;
+
+     }
+
+ }
+
+ 
