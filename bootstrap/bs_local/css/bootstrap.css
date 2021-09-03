@@ -1773,6 +1773,63 @@ progress {
     width: 16.6666666667%;
   }
 
+  .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+  }
+  .row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+  }
+  
+  .col {
+    flex: 1 0 0%;
+  }
+  
+  .row-cols-auto > * {
+    flex: 0 0 auto;
+    width: auto;
+  }
+  
+  .row-cols-1 > * {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  
+  .row-cols-2 > * {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  
+  .row-cols-3 > * {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+  }
+  
+  .row-cols-4 > * {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  
+  .row-cols-5 > * {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+  
+  .row-cols-6 > * {
+    flex: 0 0 auto;
+    width: 16.6666666667%;
+  }
+
   .col-xxl-auto {
     flex: 0 0 auto;
     width: auto;
@@ -11225,13 +11282,12 @@ textarea.form-control-lg {
   }
 }
 
-/*# sourceMappingURL=bootstrap.css.map */
 
 header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
-  color:  #fff;
+  color: #fff;
   
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11253,83 +11309,52 @@ header.masthead .masthead-heading {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-
-.page-section {
-  padding: 6rem 0;
-}
-.page-section h2.section-heading, .page-section .section-heading.h2 {
-  font-size: 2.5rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-.page-section h3.section-subheading, .page-section .section-subheading.h3 {
-  font-size: 1rem;
-  font-weight: 400;
-  font-style: italic;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  margin-bottom: 4rem;
-}
-
-
-
-  
-  .page-section h2.section-heading, .page-section .section-heading.h2 {
-    font-size: 2.5rem;
-    margin-top: 0;
-    margin-bottom: 1rem;
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
-  .page-section h3.section-subheading, .page-section .section-subheading.h3 {
-    font-size: 1rem;
-    font-weight: 400;
+  header.masthead .masthead-subheading {
+    font-size: 2.25rem;
     font-style: italic;
-    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+  }
+  header.masthead .masthead-heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
     margin-bottom: 4rem;
   }
+}
+/*# sourceMappingURL=bootstrap.css.map */
 
-  .text-uppercase {
-    text-transform: uppercase !important;
-  }
 
-  .letrasBlancas
+
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.fondoImagen {
+  background-image: url(https://thumbs.dreamstime.com/b/pared-abstracta-negra-textura-oscura-del-cemento-como-fondo-92152003.jpg);
+
+}
+
+
+.fondoImagen2 {
+  background-image: url(https://casaydiseno.com/wp-content/uploads/2018/06/decoracion-interior-color-negro-resized.jpg);
+}
+
+.fondoImagen3 {
+ background-color: black;
+}
+
+.letrasBlancas
 {
     color: white;
     font-weight: bold;
-}
-
-.margenIndex {
-  margin-top: 2rem;
-}
-
-.row > * {
-  flex-shrink: 0;
-  width: 100%;
-  max-width: 100%;
-  padding-right: calc(var(--bs-gutter-x) * .5);
-  padding-left: calc(var(--bs-gutter-x) * .5);
-  margin-top: var(--bs-gutter-y);
-}
-
-.col-md-4 {
-  flex: 0 0 auto;
-  width: 33.33333333%;
-}
-
-.text-info {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-info-rgb), var(--bs-text-opacity)) !important;
-}
-
-.my-3 {
-  margin-top: 1rem !important;
-  margin-bottom: 1rem !important;
-}
-
-.linea {
-  border-top: 1px solid white;
-  background-color: white;
-  height: 2px;
-  padding: 0;
-  margin: 20px auto 0 auto;
 }
 
 .footerInicio {
@@ -11341,12 +11366,25 @@ header.masthead .masthead-heading {
   height: 40px;
 }
 
-.fondoImagen2 {
-  background-image: url(https://casaydiseno.com/wp-content/uploads/2018/06/decoracion-interior-color-negro-resized.jpg);
+hr {
+  margin: 1rem 0;
+  color: white;
+  background-color: currentColor;
+  border: 0;
+  opacity: 0.25;
 }
 
-.fondoImagen3 {
- background-color: black;
+.margenIndex {
+  margin-top: 2rem;
+}
+
+
+.linea {
+  border-top: 1px solid white;
+  background-color: white;
+  height: 2px;
+  padding: 0;
+  margin: 20px auto 0 auto;
 }
 
 
