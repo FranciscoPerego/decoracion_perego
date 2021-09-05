@@ -27,7 +27,7 @@
          <header class="headerEstatico padreFlex">
           <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #e3f2fd;">
              <div class="container-fluid">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-gem" viewBox="0 0 16 16">
                 <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"/>
               </svg>
                <a class="navbar-brand" href="index.html">Inicio</a>
@@ -97,6 +97,67 @@
               </form>
           </div>
       </section>
+      <div class="linea"></div>
+       <section class="signup-section" id="signup">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-10 col-lg-8 mx-auto text-center">
+                    <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                    <h2 class="text-white mb-5">¿Deseas recibir nuestras ofertas semanales? Suscribite!</h2>
+                        <div class="row input-group-newsletter">
+                            <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Ingresa el email en que deseas recibir las notificaciones" aria-label="Ingresa el email en que deseas recibir las notificaciones" data-sb-validations="required,email" /></div>
+                            <div class="col-auto"><button class="btn btn-warning" id="submitButton" type="submit">Notificar!</button></div>
+                        </div>
+                        <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">Es obligatorio completar este campo.</div>
+                        <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">El email no es valido.</div>
+                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error al enviar el mensaje!</div></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact-section  margenSuperior2 letrasNegras">
+      <div class="container px-4 px-lg-5">
+          <div class="row gx-4 gx-lg-5">
+              <div class="col-md-4 mb-3 mb-md-0">
+                  <div class="card py-4 h-100">
+                      <div class="card-body text-center">
+                          <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                          <h4 class="text-uppercase m-0">Nuestra direccion:</h4>
+                          <hr class="my-4 mx-auto" />
+                          <div class="small text-black-50"> Avenida XXX 1831</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4 mb-3 mb-md-0">
+                  <div class="card py-4 h-100">
+                      <div class="card-body text-center">
+                          <i class="fas fa-envelope text-primary mb-2"></i>
+                          <h4 class="text-uppercase m-0">Direccion email</h4>
+                          <hr class="my-4 mx-auto" />
+                          <div class="small text-black-50"><a href="#!">decoraciones@perego.Milan</a></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4 mb-3 mb-md-0">
+                  <div class="card py-4 h-100">
+                      <div class="card-body text-center">
+                          <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                          <h4 class="text-uppercase m-0">Telefono</h4>
+                          <hr class="my-4 mx-auto" />
+                          <div class="small text-black-50">+XX XXXX XXXX</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="social d-flex justify-content-center">
+              <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+              <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+              <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+          </div>
+      </div>
+  </section>
            <div class="linea"></div>
            <footer class="footerOtrasSecciones">©copyright© 2021 Francisco Nicolas Perego, todos los derechos reservados</footer>
          
