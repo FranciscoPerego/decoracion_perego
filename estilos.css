@@ -5,6 +5,7 @@
 }
 
 header {
+    margin-bottom: 0px;
     width: 100%;
     position: absolute;
     z-index: 100%;
@@ -28,9 +29,11 @@ body {
 
 
 h1 {
+    margin-bottom: 0px;
     color:black ;
     background-color: black;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    
 }
 
 span {
@@ -69,6 +72,7 @@ p{
     margin-top: 10px;
     width: 100%;
     height: 40px;
+    text-align: left;
   }
 
 
@@ -91,13 +95,17 @@ p{
 }
 
 
+
 table {
     color: white;
 }
 
-nav {
-    float: left; 
-    
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
   }
   
   nav ul {
@@ -236,17 +244,12 @@ nav {
 }
 
 .fondoImagen2 {
-    background-image: url(https://image.freepik.com/foto-gratis/textura-marmol-negro-natural-papel-tapiz-azulejos-piel_24076-470.jpg);
+    background-image: url(./img/fotoFondo.jpg);
 }
 
 
 /*FlexBox*/
-.padreFlex{
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .menuFlex {
     display: flex;
@@ -387,7 +390,7 @@ nav {
 /*GRADIENTES*/
 
 .grad {
-    background-image: linear-gradient(to bottom left,pink,white,#e3f2fd,black);
+    background-image:linear-gradient(to bottom,pink,white,#e3f2fd);
 }
 
 
